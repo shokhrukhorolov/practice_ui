@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ui_practices
 
 A new Flutter project.
@@ -17,3 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 new dara was been added here
+=======
+# practice_ui
+Here I' bascically practicing my UI
+>>>>>>> 018f75885a24b1cc4baff60ce0505a891ea75992
