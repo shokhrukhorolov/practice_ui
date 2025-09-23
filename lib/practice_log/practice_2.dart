@@ -49,3 +49,78 @@
 // }
 
 
+// EXERCISE 1
+//
+// class Car {
+//   String brand;
+//   int year;
+//   int mileage;
+//
+//   Car(this.brand, this.year, this.mileage);
+//
+//   void drive(int km) {
+//     mileage += km;
+//   }
+// }
+//
+//
+//
+//
+// void main() {
+//   var car = Car("Prosche", 2020, 50);
+//   car.drive(50);
+//
+//   print("${car.brand} is been droven for ${car.mileage}");
+//
+// }
+
+
+
+// EXERCISE 2
+//
+// class Rectangle {
+//   int width;
+//   int height;
+//
+//   Rectangle(this.height, this.width);
+//
+//   int area() => width * height;
+//   int perimeter() => 2 * (width * height);
+// }
+//
+//
+//
+// void main() {
+//   var rect = Rectangle(4, 5);
+//
+//   print(rect.area());
+//   print(rect.perimeter());
+//
+// }
+
+
+// // EXERCISE 3
+//
+// void main() {
+//   var dog = Dog();
+//   var cat = Cat();
+//
+//   dog.makeSound(); // Woof!
+//   cat.makeSound(); // Meow!
+// }
+//
+// class Animal {
+//   void makeSound() {
+//     print("Some sound");
+//   }
+// }
+//
+// class Dog extends Animal {
+//   @override
+//   void makeSound() => print("Woof!");
+// }
+//
+// class Cat extends Animal {
+//   @override
+//   void makeSound() => print("Meow!");
+// }
