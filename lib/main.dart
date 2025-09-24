@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_practices/screens/home_page.dart';
+import 'package:ui_practices/flutter_practice_log/practice_1_24_09.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "UI Practices",
-      home: home()
+      home: day_one(),
     );
   }
 }
