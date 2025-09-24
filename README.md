@@ -1,8 +1,8 @@
 What I should Learn:
 
 
-22.09 — Dart basics: types, functions, collections, async/await.
-23.09 — Dart OOP: classes, inheritance, interfaces, Future/Stream.
+22.09 — Dart basics: types, functions, collections, async/await. (Done inside of practice 1)
+23.09 — Dart OOP: classes, inheritance, interfaces, Future/Stream. (Done, inside of practice 2)
 24.09 — Flutter start: Stateless/Stateful, MaterialApp, Scaffold, Navigator.
 25.09 — UI 1: Row, Column, Container, Stack, text styles, buttons, icons.
 26.09 — UI 2: ListView, GridView, Card, themes, build a Figma-style screen.
