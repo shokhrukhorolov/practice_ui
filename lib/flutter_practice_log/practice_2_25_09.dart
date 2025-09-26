@@ -150,7 +150,7 @@ import 'package:flutter/material.dart';
 //     );
 //   }
 // }
-
+//
 // class ColorChangeScreen extends StatefulWidget {
 //   const ColorChangeScreen({super.key});
 //
@@ -181,5 +181,37 @@ import 'package:flutter/material.dart';
 //     );
 //   }
 // }
+
+
+class TaskListScreen extends StatefulWidget {
+  const TaskListScreen({super.key});
+
+  @override
+  State<TaskListScreen> createState() => _TaskListScreenState();
+}
+
+class _TaskListScreenState extends State<TaskListScreen> {
+  List<String> tasks = [];
+  
+  void addTask() {
+    setState(() {
+      tasks.add("Task ${tasks.length + 1}");
+    });
+  }
+  
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Tasks")),
+      body: ListView.builder(
+          itemCount: tasks.length,
+          itemBuilder: (context, index) {
+            return ListTile(title: Text(tasks[index]),);},
+      ),
+      floatingActionButton: FloatingActionButton(onPressed: addTask, child: Icon(Icons.add),),
+    );
+  }
+}
+
 
 
