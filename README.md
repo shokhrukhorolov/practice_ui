@@ -1,16 +1,38 @@
-What I should Learn:
+# 📱 UI Practices
 
+Welcome to **UI Practices** — my personal project where I practice daily and sharpen my skills in **Dart** and **Flutter**.  
+The main goal of this repository is to build a strong foundation that I can apply in real-world projects.
 
-22.09 — Dart basics: types, functions, collections, async/await. (Done inside of practice 1)
-23.09 — Dart OOP: classes, inheritance, interfaces, Future/Stream. (Done, inside of practice 2)
-24.09 — Flutter start: Stateless/Stateful, MaterialApp, Scaffold, Navigator.
-25.09 — UI 1: Row, Column, Container, Stack, text styles, buttons, icons.
-26.09 — UI 2: ListView, GridView, Card, themes, build a Figma-style screen.
-27.09 — State 1: setState, widget lifecycle, simple ToDo app.
-29.09 — State 2: Provider, rebuild ToDo app with global state.
-30.09 — API: http package, JSON, FutureBuilder, app with posts from API.
-01.10 — Local storage: shared_preferences, cache API data.
-02.10 — Architecture & navigation: MVVM basics, go_router, multi-screen app (login → list → detail).
-03.10 — Firebase: Auth (Google/Email), Firestore CRUD, mini chat app.
-04.10 — Advanced: animations, Hero, AnimatedContainer, CustomPainter.
-06.10 — Final project: Firebase Auth, list from API/Firestore, detail screen, favorites (local storage), Provider for state, smooth animations.
+---
+
+## 📂 Project Structure
+
+Inside the `lib/` folder you will find two main directories:
+
+### 1️⃣ `dart_practices/`
+Here I practice the **fundamentals of Dart**.
+- Variables, loops, functions, collections
+- Training with [DartPad](https://dartpad.dev/)
+- Revisiting the basics of the language
+
+### 2️⃣ `flutter_practices/`
+Here I work on **Flutter exercises and tasks**.
+- Running projects in the emulator
+- Experimenting in `main.dart`
+- Practicing widgets, state management, and UI components
+
+---
+
+## 🎯 Purpose
+
+This project is for **myself**, to:
+- practice Dart and Flutter fundamentals every day
+- strengthen my coding habits
+- prepare for more advanced tasks and real-world projects
+
+---
+
+## 🚀 Tech Stack
+
+- Dart
+- Flutter
