@@ -94,29 +94,59 @@ import 'package:flutter/material.dart';
 // }
 
 
-class CounterScreen extends StatefulWidget {
-  const CounterScreen({super.key});
+// class CounterScreen extends StatefulWidget {
+//   const CounterScreen({super.key});
+//
+//   @override
+//   State<CounterScreen> createState() => _CounterScreenState();
+// }
+//
+// class _CounterScreenState extends State<CounterScreen> {
+//   int counter = 0;
+//
+//   void increment() {
+//     setState(() {
+//       counter++;
+//     });
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: const Text('Counter'),),
+//       body: Center(child: Text("Counter: $counter",style: TextStyle(fontSize: 28),),),
+//       floatingActionButton: FloatingActionButton(onPressed: increment,
+//         child: Icon(Icons.add),),
+//     );
+//   }
+// }
+
+
+class ToggleTextScreen extends StatefulWidget {
+  const ToggleTextScreen({super.key});
 
   @override
-  State<CounterScreen> createState() => _CounterScreenState();
+  State<ToggleTextScreen> createState() => _ToggleTextScreenState();
 }
 
-class _CounterScreenState extends State<CounterScreen> {
-  int counter = 0;
+class _ToggleTextScreenState extends State<ToggleTextScreen> {
+  bool showHello = true;
 
-  void increment() {
+  void toggle() {
     setState(() {
-      counter++;
+      showHello = !showHello;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Counter'),),
-      body: Center(child: Text("Counter: $counter",style: TextStyle(fontSize: 28),),),
-      floatingActionButton: FloatingActionButton(onPressed: increment,
-        child: Icon(Icons.add),),
+      body: Center(
+        child: Text(showHello ? "Hello" : "Goodbye", style: TextStyle(fontSize: 32),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(onPressed: toggle, child: Icon(Icons.refresh),
+      ),
     );
   }
 }
