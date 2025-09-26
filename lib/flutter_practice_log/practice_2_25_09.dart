@@ -122,32 +122,64 @@ import 'package:flutter/material.dart';
 // }
 
 
-class ToggleTextScreen extends StatefulWidget {
-  const ToggleTextScreen({super.key});
+// class ToggleTextScreen extends StatefulWidget {
+//   const ToggleTextScreen({super.key});
+//
+//   @override
+//   State<ToggleTextScreen> createState() => _ToggleTextScreenState();
+// }
+//
+// class _ToggleTextScreenState extends State<ToggleTextScreen> {
+//   bool showHello = true;
+//
+//   void toggle() {
+//     setState(() {
+//       showHello = !showHello;
+//     });
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Center(
+//         child: Text(showHello ? "Hello" : "Goodbye", style: TextStyle(fontSize: 32),
+//         ),
+//       ),
+//       floatingActionButton: FloatingActionButton(onPressed: toggle, child: Icon(Icons.refresh),
+//       ),
+//     );
+//   }
+// }
 
-  @override
-  State<ToggleTextScreen> createState() => _ToggleTextScreenState();
-}
+// class ColorChangeScreen extends StatefulWidget {
+//   const ColorChangeScreen({super.key});
+//
+//   @override
+//   State<ColorChangeScreen> createState() => _ColorChangeScreenState();
+// }
+//
+// class _ColorChangeScreenState extends State<ColorChangeScreen> {
+//   bool isRed = true;
+//
+//   void changeColor() {
+//     setState(() {
+//       isRed = !isRed;
+//     });
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Center(
+//         child: Container(
+//           height: 150,
+//           width: 150,
+//           color: isRed ? Colors.red : Colors.blue,
+//         ),
+//       ),
+//       floatingActionButton: FloatingActionButton(onPressed: changeColor, child: Icon(Icons.color_lens),),
+//     );
+//   }
+// }
 
-class _ToggleTextScreenState extends State<ToggleTextScreen> {
-  bool showHello = true;
-
-  void toggle() {
-    setState(() {
-      showHello = !showHello;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(showHello ? "Hello" : "Goodbye", style: TextStyle(fontSize: 32),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(onPressed: toggle, child: Icon(Icons.refresh),
-      ),
-    );
-  }
-}
 
