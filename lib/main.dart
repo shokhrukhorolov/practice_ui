@@ -15,9 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "UI Practices",
       // home: mylist(items: List<String>.generate(10000, (i) => 'Item $i'),),
-      home: MyApp(),
+      home: ,
     );
   }
 }
