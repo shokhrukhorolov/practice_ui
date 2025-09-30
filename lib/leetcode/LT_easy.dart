@@ -72,3 +72,23 @@
 //     return original == reversed;
 //   }
 // }
+
+
+// class Solution {
+//   bool isPalindrome(int x) {
+//
+//     List<int> inList = [x];
+//
+//     List<int> reversedNumbers = inList.map((num) {
+//       String reversedStr = num.toString().split('').reversed.join();
+//       return int.parse(reversedStr);
+//     }).toList();
+//
+//     if (inList == reversedNumbers) {
+//       return true;
+//     } else {
+//       return
+//     }
+//
+//   }
+// }
