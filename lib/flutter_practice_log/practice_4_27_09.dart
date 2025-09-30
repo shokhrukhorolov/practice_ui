@@ -75,3 +75,50 @@
 //     );
 //   }
 // }
+
+
+// import 'package:flutter/material.dart';
+//
+// class Cities extends StatelessWidget {
+//   const Cities({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('List exercises'),
+//         backgroundColor: Colors.cyan,
+//       ),
+//       body: ListTile(
+//         leading: Icon(Icons.home),
+//         title: Text('Home'),
+//         subtitle: Text('Test text, to fill the items'),
+//       )
+//     );
+//   }
+// }
+
+import 'package:flutter/material.dart';
+
+class Cities extends StatelessWidget {
+  const Cities({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('List exercises'),
+          backgroundColor: Colors.cyan,
+        ),
+        body: ListView.builder(
+          itemCount: 6,
+          itemBuilder: (context, index) {
+            return ListTile(
+        leading: Icon(Icons.home),
+        title: Text('Home'),
+        subtitle: Text('Test text, to fill the items'));
+          }
+        )
+    );
+  }
+}
