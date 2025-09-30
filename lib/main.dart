@@ -15,9 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       // home: mylist(items: List<String>.generate(10000, (i) => 'Item $i'),),
+      debugShowCheckedModeBanner: false,
       home: Cities(),
+      title: 'Flutter Primary Color Example',
+        theme: ThemeData(
+
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        )
     );
   }
 }

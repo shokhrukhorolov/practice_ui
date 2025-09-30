@@ -100,25 +100,48 @@
 
 import 'package:flutter/material.dart';
 
+// class Cities extends StatelessWidget {
+//   const Cities({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: const Text('List exercises'),
+//           backgroundColor: Colors.cyan,
+//         ),
+//         body: ListView.builder(
+//           itemCount: 6,
+//           itemBuilder: (context, index) {
+//             return ListTile(
+//         leading: Icon(Icons.home),
+//         title: Text('Home'),
+//         subtitle: Text('Test text, to fill the items'));
+//           }
+//         )
+//     );
+//   }
+// }
+
 class Cities extends StatelessWidget {
   const Cities({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('List exercises'),
-          backgroundColor: Colors.cyan,
+      appBar: AppBar(
+        title: Text('Primary Color Demo', style: TextStyle(color: Colors.purple, fontSize: 30, fontWeight: FontWeight.bold ),),
+      ),
+      body: Center(
+        child: Text(
+          'This text uses the primary color for interactive elements.',
+          style: TextStyle(color: Theme.of(context).colorScheme.primary),
         ),
-        body: ListView.builder(
-          itemCount: 6,
-          itemBuilder: (context, index) {
-            return ListTile(
-        leading: Icon(Icons.home),
-        title: Text('Home'),
-        subtitle: Text('Test text, to fill the items'));
-          }
-        )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
