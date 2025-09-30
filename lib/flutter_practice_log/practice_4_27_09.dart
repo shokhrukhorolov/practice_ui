@@ -123,24 +123,42 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
+// class Cities extends StatelessWidget {
+//   const Cities({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Primary Color Demo', style: TextStyle(color: Colors.purple, fontSize: 30, fontWeight: FontWeight.bold ),),
+//       ),
+//       body: Center(
+//         child: Text(
+//           'This text uses the primary color for interactive elements.',
+//           style: TextStyle(color: Theme.of(context).colorScheme.primary),
+//         ),
+//       ),
+//       floatingActionButton: FloatingActionButton(
+//         onPressed: () {},
+//         child: const Icon(Icons.add),
+//       ),
+//     );
+//   }
+// }
+
 class Cities extends StatelessWidget {
   const Cities({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Primary Color Demo', style: TextStyle(color: Colors.purple, fontSize: 30, fontWeight: FontWeight.bold ),),
-      ),
-      body: Center(
-        child: Text(
-          'This text uses the primary color for interactive elements.',
-          style: TextStyle(color: Theme.of(context).colorScheme.primary),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.add),
+      body: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text('item${index+1}'),
+          );
+        }
       ),
     );
   }
