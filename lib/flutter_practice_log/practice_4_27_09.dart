@@ -166,49 +166,49 @@ import 'package:flutter/material.dart';
 // }
 
 
-class Cities extends StatelessWidget {
-  const Cities({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Profile")),
-      body: Column(
-        children: [
-          SizedBox(height: 20),
-          CircleAvatar(
-            radius: 40,
-            backgroundColor: Colors.blue,
-            child: Text(
-              "Z",
-              style: TextStyle(fontSize: 30, color: Colors.white),
-            ),
-          ),
-          SizedBox(height: 10),
-          Text("Имя"),
-          Divider(),
-          Text("Email"),
-          Divider(),
-          Expanded(
-            child: ListView(
-              children: [
-                Card(
-                  child: ListTile(
-                    leading: Icon(Icons.settings),
-                    title: Text("Settings"),
-                  ),
-                ),
-                Card(
-                  child: ListTile(
-                    leading: Icon(Icons.logout),
-                    title: Text("Logout"),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
+// class Cities extends StatelessWidget {
+//   const Cities({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text("Profile")),
+//       body: Column(
+//         children: [
+//           SizedBox(height: 20),
+//           CircleAvatar(
+//             radius: 40,
+//             backgroundColor: Colors.blue,
+//             child: Text(
+//               "Z",
+//               style: TextStyle(fontSize: 30, color: Colors.white),
+//             ),
+//           ),
+//           SizedBox(height: 10),
+//           Text("Имя"),
+//           Divider(),
+//           Text("Email"),
+//           Divider(),
+//           Expanded(
+//             child: ListView(
+//               children: [
+//                 Card(
+//                   child: ListTile(
+//                     leading: Icon(Icons.settings),
+//                     title: Text("Settings"),
+//                   ),
+//                 ),
+//                 Card(
+//                   child: ListTile(
+//                     leading: Icon(Icons.logout),
+//                     title: Text("Logout"),
+//                   ),
+//                 ),
+//               ],
+//             ),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
