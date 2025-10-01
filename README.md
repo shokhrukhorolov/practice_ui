@@ -36,3 +36,6 @@ This project is for **myself**, to:
 
 - Dart
 - Flutter
+
+
+--- additionally, somedays I am learning theory and covering fundamentals just because I have no access to my laptop(since I often travel, and it is unsafe, to take my laptop with me)
