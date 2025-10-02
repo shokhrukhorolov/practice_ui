@@ -100,3 +100,17 @@
 //     return num1 + num2;
 //   }
 // }
+
+// PROBLEM 1480. rUNNING sUM OF 1D aRRAY
+
+// class Solution {
+//   List<int> runningSum(List<int> nums) {
+//     List<int> results = List<int>.filled(nums.length, 0);
+//     results[0] = nums[0];
+//
+//     for (int i = 1; i < nums.length; i++) {
+//       results[i] = nums[i] + results[i - 1];
+//     }
+//     return results;
+//   }
+// }
