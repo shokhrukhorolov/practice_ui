@@ -66,14 +66,16 @@ class _CounterScreenState extends State<CounterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Home')),
-      body: Column(
+      body: Row(
         children: [
-          Row(
+          Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 width: 80,
                 height: 80,
+                margin: EdgeInsets.all(20),
+                padding: EdgeInsets.all(20),
                 color: Colors.grey[300],
                 child: Center(child: Text(' 1'),),
               ),
