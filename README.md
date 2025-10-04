@@ -39,3 +39,5 @@ This project is for **myself**, to:
 
 
 --- additionally, somedays I am learning theory and covering fundamentals just because I have no access to my laptop(since I often travel, and it is unsafe, to take my laptop with me)
+
+learnt about creating software and design compatible with apple's one
