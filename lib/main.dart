@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_practices/flutter_practice_log/practice_07_30_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_1_24_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_2_25_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_3_26_09.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Profile(),
+      home: CounterProvider(),
     );
   }
 }
