@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ui_practices/flutter_practice_log/practice_07_30_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_08_01_10.dart';
+import 'package:ui_practices/flutter_practice_log/practice_08_02_10.dart';
 import 'package:ui_practices/flutter_practice_log/practice_1_24_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_2_25_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_3_26_09.dart';
@@ -10,13 +11,11 @@ import 'package:ui_practices/flutter_practice_log/practice_5_28_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_6_29_09.dart';
 import 'package:ui_practices/models/counter_provider.dart';
 import 'package:ui_practices/models/navigation.dart';
+import 'package:ui_practices/models/todoprovider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (contex) => CounterModel(),
-      child: const MyApp(),
-    ),
+    ChangeNotifierProvider(create: (_) => TodoProvider(), child: const MyApp()),
   );
 }
 
@@ -26,9 +25,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: NavigatorExampleApp(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: TodoScreen());
   }
 }
