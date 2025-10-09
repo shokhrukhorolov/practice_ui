@@ -11,6 +11,7 @@ import 'package:ui_practices/flutter_practice_log/practice_4_27_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_5_28_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_6_29_09.dart';
 import 'package:ui_practices/models/counter_provider.dart';
+import 'package:ui_practices/models/favoriteprovider.dart';
 import 'package:ui_practices/models/navigation.dart';
 import 'package:ui_practices/models/themeprovider.dart';
 import 'package:ui_practices/models/todoprovider.dart';
@@ -21,6 +22,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => TodoProvider()),
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => FavoriteProvider()),
       ],
       child: const MyApp(),
     ),
