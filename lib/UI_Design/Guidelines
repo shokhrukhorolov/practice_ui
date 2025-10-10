@@ -1,0 +1,25 @@
+Defining Test Cases and Test Methods
+
+Swift
+
+    class TableValidationTests: XCTestCase {
+        /// Tests that a new table instance has zero rows and columns.
+        func testEmptyTableRowAndColumnCount() {
+            let table = Table()
+            XCTAssertEqual(table.rowCount, 0, "Row count was not zero.")
+            XCTAssertEqual(table.columnCount, 0, "Column count was not zero.")
+        }
+    }
+
+Objective-C
+
+    @interface TableValidationTests: XCTestCase
+    @end
+    @implementation TableValidationTests
+    /// Tests that a new table instance has zero rows and columns.
+    - (void)testEmptyTableRowAndColumnCount {
+        Table *table = [[Table alloc] init];
+        XCTAssertEqual(table.rowCount, 0, "Row count was not zero.");
+        XCTAssertEqual(table.columnCount, 0, "Column count was not zero.");
+    }
+    @end
