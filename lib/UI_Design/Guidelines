@@ -23,3 +23,12 @@ Objective-C
         XCTAssertEqual(table.columnCount, 0, "Column count was not zero.");
     }
     @end
+
+
+
+
+
+
+
+    solved a leetcode but im not at home
+
