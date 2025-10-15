@@ -1,8 +1,8 @@
 // import 'package:flutter/material.dart';
 // import 'package:provider/provider.dart';
-// import 'package:ui_practices/models/favoriteprovider.dart';
-// import 'package:ui_practices/models/themeprovider.dart';
-// import 'package:ui_practices/models/todoprovider.dart';
+// import 'package:ui_practices/service/favoriteprovider.dart';
+// import 'package:ui_practices/service/themeprovider.dart';
+// import 'package:ui_practices/service/todoprovider.dart';
 // import 'package:ui_practices/secondscreen_roles/favorite_items.dart';
 //
 // class TodoScreen extends StatefulWidget {

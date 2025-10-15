@@ -11,11 +11,11 @@ import 'package:ui_practices/flutter_practice_log/practice_3_26_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_4_27_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_5_28_09.dart';
 import 'package:ui_practices/flutter_practice_log/practice_6_29_09.dart';
-import 'package:ui_practices/models/counter_provider.dart';
-import 'package:ui_practices/models/favoriteprovider.dart';
-import 'package:ui_practices/models/navigation.dart';
-import 'package:ui_practices/models/themeprovider.dart';
-import 'package:ui_practices/models/todoprovider.dart';
+import 'package:ui_practices/service/counter_provider.dart';
+import 'package:ui_practices/service/favoriteprovider.dart';
+import 'package:ui_practices/service/navigation.dart';
+import 'package:ui_practices/service/themeprovider.dart';
+import 'package:ui_practices/service/todoprovider.dart';
 
 void main() {
   runApp(
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(),
       // darkTheme: ThemeData.dark(),
       // themeMode: themeProvider.isDark ? ThemeMode.dark : ThemeMode.light,
-      home: ApiPractice(),
+      home: HomePage(),
     );
   }
 }

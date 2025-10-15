@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:ui_practices/models/counter_provider.dart';
+import 'package:ui_practices/service/counter_provider.dart';
 
 // class CounterProvider with ChangeNotifier {
 //   int _count = 0;
